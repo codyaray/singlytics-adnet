@@ -9,7 +9,7 @@ exports.ads = function(req, res){
   //res.send('{"category":"sports", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-sports-300x250.jpg","href":"http://www.singly.com"},"locale":'  + locale + ',"gender":' + gender + ',"language":' + language + ',"timezone":' + timezone + '}');
 
  
-  if(locale == 'en_US' && gender == 'female' && intrest == 'computers'){
+  if(locale == 'en_US' && gender == 'female' && interest == 'computers'){
     res.send('{"category":"dating", "image" : "http://farm9.staticflickr.com/8316/8037143421_eb3cbd0564.jpg","href":"http://www.singly.com"}');
   }
     else if(locale == 'en_US' && gender == 'male' && interest == 'kittens'){
