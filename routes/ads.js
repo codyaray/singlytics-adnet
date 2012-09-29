@@ -10,12 +10,15 @@ exports.ads = function(req, res){
 
  
   if(locale == 'en_US' && gender == 'female' && intrest == 'computers'){
-    res.send('{"category":"fashion", "image" : "http://farm9.staticflickr.com/8316/8037143421_eb3cbd0564.jpg","href":"http://www.singly.com"}');
+    res.send('{"category":"dating", "image" : "http://farm9.staticflickr.com/8316/8037143421_eb3cbd0564.jpg","href":"http://www.singly.com"}');
   }
     else if(locale == 'en_US' && gender == 'male' && interest == 'kittens'){
-    res.send('{"category":"fashion", "image" : "http://farm9.staticflickr.com/8454/8037143501_127043003d.jpg","href":"http://www.singly.com"}');
+    res.send('{"category":"animals", "image" : "http://farm9.staticflickr.com/8454/8037143501_127043003d.jpg","href":"http://www.singly.com"}');
   }
-    else if(locale == 'en_US' && gender == 'male' || gender == 'female' && interest == 'golf'){
-    res.send('{"category":"fashion", "image" : "http://farm9.staticflickr.com/8316/8037143535_9799b715c4.jpg","href":"http://www.singly.com"}');
+    else if(locale == 'en_US' && interest == 'golf'){
+    res.send('{"category":"golf", "image" : "http://farm9.staticflickr.com/8316/8037143535_9799b715c4.jpg","href":"http://www.singly.com"}');
+  }
+  else {
+   res.send('{"category":"none", "image" : "none","href":"nothing"}'); 
   };
 };
