@@ -31,6 +31,6 @@ exports.ads = function(req, res){
   	} else if (category == 'sports') {
   */		
   		res.send('{"category":"sports", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-sports-300x250.jpg","href":"http://www.singly.com"}');
-  	};
-  };
+//  	};
+//  };
 };
