@@ -5,6 +5,7 @@
 
 var express = require('express')
   , routes = require('./routes')
+  , url = require('url')
   , request = require('request');
 
 var app = module.exports = express.createServer();
