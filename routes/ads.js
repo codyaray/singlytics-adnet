@@ -19,6 +19,6 @@ exports.ads = function(req, res){
     res.send('{"category":"golf", "image" : "http://farm9.staticflickr.com/8316/8037143535_9799b715c4.jpg","href":"http://www.singly.com"}');
   }
   else {
-   res.send('{"category":"default", "http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgMDO89iH_AEQrAIY-gEyCCCUZbQUszgq" : "none","href":"http://www.nfl.com"}'); 
+   res.send('{"category":"default", "image" : "http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgMDO89iH_AEQrAIY-gEyCCCUZbQUszgq","href":"http://www.nfl.com"}'); 
   };
 };
