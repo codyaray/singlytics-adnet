@@ -9,32 +9,13 @@ exports.ads = function(req, res){
   //res.send('{"category":"sports", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-sports-300x250.jpg","href":"http://www.singly.com"},"locale":'  + locale + ',"gender":' + gender + ',"language":' + language + ',"timezone":' + timezone + '}');
 
  
-  if(locale == 'en_US' && gender == 'male'){
-    res.send('{"category":"fashion", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-fashion-300x250.jpg","href":"http://www.singly.com"}');
-    console.log('en_us and i am a boy!!!!')
+  if(locale == 'en_US' && gender == 'female' && intrest == 'computers'){
+    res.send('{"category":"fashion", "image" : "http://farm9.staticflickr.com/8316/8037143421_eb3cbd0564.jpg","href":"http://www.singly.com"}');
   }
-    else if(locale == 'en_US' && gender == 'female'){
-    res.send('{"category":"fashion", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-fashion-300x250.jpg","href":"http://www.singly.com"}');
-    console.log('en_us and i am a girl!!!!')
+    else if(locale == 'en_US' && gender == 'male' && interest == 'kittens'){
+    res.send('{"category":"fashion", "image" : "http://farm9.staticflickr.com/8454/8037143501_127043003d.jpg","href":"http://www.singly.com"}');
   }
-    else if(locale == 'en_US' && gender == 'unefined'){
-    res.send('{"category":"fashion", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-fashion-300x250.jpg","href":"http://www.singly.com"}');
-    console.log('en_us i am a pat!!!!')
-  }
-    else if (locale == 'en_CA') {
-    res.send('{"category":"motors", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-motors-300x250.jpg","href":"http://www.singly.com"}');
-    console.log('canada, eh')
-  }
-    else if (locale == 'en_US' && interest == "golf") {
-    res.send('{"category":"home", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-home-300x250.jpg","href":"http://www.singly.com"}');
-    console.log('i like golf')
-  }
-    else if (locale == 'en_US' && interest == "computers" || interest == "programming") {
-    res.send('{"category":"electronics", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-electronics-300x250.jpg","href":"http://www.singly.com"}');
-    console.log('i am a nerd')
-  }
-    else if (locale == 'en_US' && interest == "college" || interest == "education" || interest == "video") {		
-    res.send('{"category":"electronics", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-electronics-300x250.jpg","href":"http://www.singly.com"}');
-    console.log('i like video')
+    else if(locale == 'en_US' && gender == 'male' || gender == 'female' && interest == 'golf'){
+    res.send('{"category":"fashion", "image" : "http://farm9.staticflickr.com/8316/8037143535_9799b715c4.jpg","href":"http://www.singly.com"}');
   };
 };
