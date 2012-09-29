@@ -1,5 +1,7 @@
 exports.ads = function(req, res){
   
+  res.send('{"category":"sports", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-sports-300x250.jpg","href":"http://www.singly.com"}');
+  
 /*  if (req.param('category')) {
   	
   	var category = req.param('category');
@@ -29,8 +31,8 @@ exports.ads = function(req, res){
   		res.send('{"category":"entertainment", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-entertainment-300x250.jpg","href":"http://www.singly.com"}');
   	
   	} else if (category == 'sports') {
-  */		
-  		res.send('{"category":"sports", "image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Ad-sports-300x250.jpg","href":"http://www.singly.com"}');
-//  	};
-//  };
+		
+  
+ 	};
+ }; */
 };
